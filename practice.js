@@ -15,7 +15,7 @@ function greeting(name){
 //Name it newGreeting.
 
 //Code Here
-var newgreeting = function(name){
+var newGreeting = function(name){
   return "Hello, "+name;
 };
 //////////////////PROBLEM 3////////////////////
@@ -24,7 +24,7 @@ var newgreeting = function(name){
 //Name it finalGreeting.
 
 //Code Here
-(name) => {return "Hello, "+name;};
+var finalGreeting = (name) => {return "Hello, "+name;};
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
@@ -61,7 +61,7 @@ function doubleCheck(arr){
 //Code Here
 var dog = {
   name : 'Puppet',
-  colour : 'White',
+  color : 'White',
   age : 7,
   goodBoy : false
 };
@@ -161,16 +161,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "realDuck"];
+let bathroomScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 10////////////////////
 
@@ -182,12 +182,12 @@ function outerFn(){
   var name = function(){
     return 'Jaden Skinner';
   }
-  return name();
+  return name;
 }
 //Now save the result of invoking outerFn into a variable called innerFn.
 
 //Code Here
 var innerFn = outerFn();
 //Now invoke innerFn and save the result to a variable called finalResult.
-finalResult = innerFn;
+finalResult = innerFn();
 //Code Here
